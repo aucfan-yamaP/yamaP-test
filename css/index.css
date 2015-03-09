@@ -1,0 +1,65 @@
+div.this_ym{
+	height:10%;
+	text-align: right;
+	vertical-align: bottom;
+}
+div.this_ym .this_y{
+	font-size: 25px;
+}
+div.this_ym .this_m{
+	font-size: 45px;
+}
+table{
+	width:100%;
+	height:80%;
+}
+table,tr{
+}
+td{
+	border-bottom:solid 1px darkslategray;
+	border-left:solid 1px darkslategray;
+}
+th{
+	border-top:solid 1px darkslategray;
+	border-bottom:solid 1px darkslategray;
+	border-left:solid 1px darkslategray;
+	text-align:center;
+}
+td{
+	text-align:left;
+	vertical-align:top;
+}
+th.weekend{
+	background-color: #EEEEEE;
+	font-size: 30px;
+	height:65px;
+}
+td.days{
+	background-color: #EEEEEE;
+}
+td.days .day{
+	font-size: 20px;
+}
+span.w_radi{
+	background-color:#000004;
+	padding:10px 20%;
+	color:#ffffff;
+	border:solid 1px #ffffff;
+}
+.w0{
+	background-color:#F86263 !important;
+	color:#ffffff;
+}
+.w6{
+	background-color:#5881B0 !important;
+	color:#ffffff;
+}
+.not_main{
+	color:#9E9D9B;
+}
+.radius{
+	border-radius:50px;
+}
+.radius_light{
+	border-radius:20px;
+}
