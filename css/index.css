@@ -34,6 +34,7 @@ th{
 	border-bottom:solid 1px darkslategray;
 	border-left:solid 1px darkslategray;
 	text-align:center;
+	width:14%;
 }
 td{
 	text-align:left;
@@ -49,6 +50,14 @@ td.days{
 }
 td.days .day{
 	font-size: 20px;
+}
+td.days .mark{
+	
+}
+td.days .mark img{
+	width:30px;
+	height:30px;
+	display:none;
 }
 span.w_radi{
 	background-color:#000004;
@@ -107,6 +116,11 @@ div.status_bar span{
 	font-size:30px;
 	border:solid 1px black;
 	cursor:pointer;
+}
+.end_select{
+	text-align: center;
+	margin-top:30px;
+	display:none;
 }
 div.shadow{
 	position:fixed;

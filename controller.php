@@ -47,17 +47,20 @@
     {
         $calendar_main[$calendar_row_count][$key]['type'] = 'before';
         $calendar_main[$calendar_row_count][$key]['day'] = $val;
+        $calendar_main[$calendar_row_count][$key]['day_full'] = $before_y.'-'.$before_n.'-'.$val;
     }
     for($i=1;$i<=$today_lj;$i++)
     {
         $calendar_main[$calendar_row_count][date('w',strtotime($today_y.'-'.$today_m.'-'.$i))]['type'] = 'main';
         $calendar_main[$calendar_row_count][date('w',strtotime($today_y.'-'.$today_m.'-'.$i))]['day'] = $i;
+        $calendar_main[$calendar_row_count][date('w',strtotime($today_y.'-'.$today_n.'-'.$i))]['day_full'] = $today_y.'-'.$today_m.'-'.$i;
         if(date('w',strtotime($today_y.'-'.$today_m.'-'.$i)) == 6) $calendar_row_count++;
     }
     foreach($calendar_after_month_days as $key => $val)
     {
         $calendar_main[$calendar_row_count][$key]['type'] = 'after';
         $calendar_main[$calendar_row_count][$key]['day'] = $val;
+        $calendar_main[$calendar_row_count][$key]['day_full'] = $after_y.'-'.$after_n.'-'.$val;
     }
 
 ?>
