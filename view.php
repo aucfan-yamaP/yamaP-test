@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width,height=device-height">
         <link type="text/css" rel="stylesheet" href="css/index.css" />
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script src="js/index.js"></script>
@@ -43,7 +44,7 @@
             </div>
             <div class="shift_box">
                 <div class="contents radius">
-                    シフトを選択してちょ！：
+                    シフトを選択してちょ！：<br />
                     <ul>
                         <?php foreach($conf['MAO_SHIFTS'] as $shift_name => $info): ?>
                             <li class="radius_light" data-val="<?php echo $shift_name; ?>">
