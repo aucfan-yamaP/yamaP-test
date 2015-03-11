@@ -56,6 +56,9 @@ td.days{
 td.days .day{
 	font-size: 20px;
 }
+table.select td.days{
+	cursor:pointer;
+}
 td.days .mark{
 	
 }
@@ -130,6 +133,7 @@ div.status_bar span{
 }
 .end_select img{
 	width:100%;
+	cursor:pointer;
 }
 div.shadow{
 	position:fixed;
