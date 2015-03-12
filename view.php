@@ -30,8 +30,9 @@
                     <tr>
                         <?php foreach($days as $weekend_no => $day): ?>
                             <td class="days w<?php echo $weekend_no; ?><?php if($day['type'] != 'main'): ?> not_main<?php endif; ?>" data-date="<?php echo $day['day']; ?>" data-dateFull="<?php echo $day['day_full']; ?>">
-                                <span class="day"><?php echo $day['day']; ?></span>
-                                <span class="mark"><img class="check" src="img/check.png" /><img class="batsu" src="img/batsu.png" /></span>
+                                <span class="day"><?php echo $day['day']; ?></span><br />
+                                <span class="day_shift"></span>
+                                <span class="mark"><img class="loading" src="img/loading.gif" /><img class="check" src="img/check.png" /><img class="batsu" src="img/batsu.png" /></span>
                                 <input type="hidden" name="date_<?php echo $day['day_full']; ?>" value="" />
                             </td>
                         <?php endforeach; ?>

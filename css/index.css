@@ -56,6 +56,9 @@ td.days{
 td.days .day{
 	font-size: 20px;
 }
+td.days .day_shift{
+	font-size: 13px;
+}
 table.select td.days{
 	cursor:pointer;
 }
