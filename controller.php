@@ -1,23 +1,27 @@
 <?php
     require_once('conf.php');
 
-    $today_y = date('Y');
-    $today_m = date('m');
-    $today_d = date('d');
-    $today_n = date('n');
-    $today_j = date('j');
+    $this_day = (isset($_GET['date']) && strtotime($_GET['date']) > strtotime('2010-01-01'))? $_GET['date']:date('Y-m-d');
+    $this_day_strtotime = strtotime($this_day);
+    $real_today = date('Y-m-j');
     
-    $before_y = date('Y',strtotime('-1 month'));
-    $before_m = date('m',strtotime('-1 month'));
-    $before_d = date('d',strtotime('-1 month'));
-    $before_n = date('n',strtotime('-1 month'));
-    $before_j = date('j',strtotime('-1 month'));
+    $today_y = date('Y',$this_day_strtotime);
+    $today_m = date('m',$this_day_strtotime);
+    $today_d = date('d',$this_day_strtotime);
+    $today_n = date('n',$this_day_strtotime);
+    $today_j = date('j',$this_day_strtotime);
+    
+    $before_y = date('Y',strtotime($this_day.' -1 month'));
+    $before_m = date('m',strtotime($this_day.' -1 month'));
+    $before_d = date('d',strtotime($this_day.' -1 month'));
+    $before_n = date('n',strtotime($this_day.' -1 month'));
+    $before_j = date('j',strtotime($this_day.' -1 month'));
 
-    $after_y = date('Y',strtotime('+1 month'));
-    $after_m = date('m',strtotime('+1 month'));
-    $after_d = date('d',strtotime('+1 month'));
-    $after_n = date('n',strtotime('+1 month'));
-    $after_j = date('j',strtotime('+1 month'));
+    $after_y = date('Y',strtotime($this_day.' +1 month'));
+    $after_m = date('m',strtotime($this_day.' +1 month'));
+    $after_d = date('d',strtotime($this_day.' +1 month'));
+    $after_n = date('n',strtotime($this_day.' +1 month'));
+    $after_j = date('j',strtotime($this_day.' +1 month'));
 
     $before_l = date('d',strtotime($today_y.'-'.$today_m.'-01 -1 day'));
     $today_l = date('d',strtotime($after_y.'-'.$after_m.'-01 -1 day'));

@@ -11,12 +11,18 @@
                 <span class="this_y"><?php echo $today_y; ?>&nbsp;/&nbsp;</span><span class="this_m"><?php echo $today_n; ?></span>月   
             </div>
             <div class="menu">
-                <img class="menu_btn menu_btn_on" src="img/btn_mypagen.png" />
+                <a href="#">
+                    <img class="menu_btn menu_btn_on" src="img/btn_mypagen.png" />
+                </a>
             </div>
             <div class="menu_list">
                 <img class="menu_btn menu_btn_off" src="img/btn_mypagen.png" />
-                <div class="radius shift_to_form menu_btns">シフトから登録</div>
-                <div class="radius day_to_form menu_btns">日にちから登録</div>
+                <a href="#">
+                    <div class="radius shift_to_form menu_btns">シフトから登録</div>
+                </a>
+                <a href="#">
+                    <div class="radius day_to_form menu_btns">日にちから登録</div>
+                </a>
             </div>
             <table class="main_table">
                 <tr>
@@ -30,7 +36,7 @@
                     <tr>
                         <?php foreach($days as $weekend_no => $day): ?>
                             <td class="days w<?php echo $weekend_no; ?><?php if($day['type'] != 'main'): ?> not_main<?php endif; ?>" data-date="<?php echo $day['day']; ?>" data-dateFull="<?php echo $day['day_full']; ?>">
-                                <span class="day"><?php echo $day['day']; ?></span><br />
+                                <span class="day<?php if($day['day_full'] == $real_today): ?> today<?php endif; ?>"><?php echo $day['day']; ?></span><br />
                                 <span class="day_shift"></span>
                                 <span class="mark"><img class="loading" src="img/loading.gif" /><img class="check" src="img/check.png" /><img class="batsu" src="img/batsu.png" /></span>
                                 <input type="hidden" name="date_<?php echo $day['day_full']; ?>" value="" />
