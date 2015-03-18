@@ -6,6 +6,9 @@ $(function(){
         menuToggle($(this));
         return false;
     });
+    $('#select_date').change(function(){
+        location.href = '?date='+$(this).val();
+    });
     $('.shift_to_form').click(function(){
         menuToggle($('.menu_btn_off'));
         $('.shift_box').fadeIn('fast');
@@ -17,6 +20,8 @@ $(function(){
         $('.main_table').addClass('selectday');
         $('.end_select').css('display','block');
         $('body').addClass('select');
+        $('div.attention').css('display','block');
+        $(window).scrollTop(100);
         return false;
     });
     $('.shift_box .contents li').click(function(){
@@ -35,6 +40,8 @@ $(function(){
         $('.end_select').css('display','block');
         $('.shadow').click();
         $('body').addClass('select');
+        $('div.attention').css('display','block');
+        $(window).scrollTop(100);
     });
 
     $('table.main_table td.days').click(function(){

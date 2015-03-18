@@ -4,7 +4,7 @@
     $this_day = (isset($_GET['date']) && strtotime($_GET['date']) > strtotime('2010-01-01'))? $_GET['date']:date('Y-m-d');
     $this_day_strtotime = strtotime($this_day);
     $real_today = date('Y-m-j');
-    
+
     $today_y = date('Y',$this_day_strtotime);
     $today_m = date('m',$this_day_strtotime);
     $today_d = date('d',$this_day_strtotime);

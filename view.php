@@ -8,7 +8,7 @@
     <body>
         <form action="update" method="post" enctype="multipart/form-data" name="cal_form" id="cal_form">
             <div class="this_ym">
-                <span class="this_y"><?php echo $today_y; ?>&nbsp;/&nbsp;</span><span class="this_m"><?php echo $today_n; ?></span>月   
+                <span class="date_title"><span class="this_y"><?php echo $today_y; ?>&nbsp;/&nbsp;</span><span class="this_m"><?php echo $today_n; ?></span>月</span><br />
             </div>
             <div class="menu">
                 <a href="#">
@@ -23,6 +23,21 @@
                 <a href="#">
                     <div class="radius day_to_form menu_btns">日にちから登録</div>
                 </a>
+                <span class="select_date">
+                    年月変更：
+                    <select name="select_date" id="select_date">
+                        <?php for($ii=6;$ii>=1;$ii--): ?>
+                        <option <?php if(date('Y-m',$this_day_strtotime) == date('Y-m',strtotime($real_today.' -'.$ii.' month'))) echo 'selected'; ?> value="<?php echo date('Y-m',strtotime($real_today.' -'.$ii.' month')); ?>"><?php echo date('Y/m',strtotime($real_today.' -'.$ii.' month')); ?></option>
+                        <?php endfor; ?>
+                        <option <?php if(date('Y-m',$this_day_strtotime) == date('Y-m',strtotime($real_today))) echo 'selected'; ?> value="<?php echo date('Y-m',strtotime($real_today)); ?>"><?php echo date('Y/m',strtotime($real_today)); ?></option>
+                        <?php for($ii=1;$ii<=6;$ii++): ?>
+                            <option <?php if(date('Y-m',$this_day_strtotime) == date('Y-m',strtotime($real_today.' +'.$ii.' month'))) echo 'selected'; ?> value="<?php echo date('Y-m',strtotime($real_today.' +'.$ii.' month')); ?>"><?php echo date('Y/m',strtotime($real_today.' +'.$ii.' month')); ?></option>
+                        <?php endfor; ?>
+                    </select>
+                </span>
+            </div>
+            <div class="attention">
+                ※登録が完了したら下部の「選択終了」ボタンを押下してください
             </div>
             <table class="main_table">
                 <tr>
