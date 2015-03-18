@@ -1,6 +1,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width,height=device-height">
+        <meta name="robots" content="none">
         <link type="text/css" rel="stylesheet" href="css/index.css" />
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script src="js/index.js"></script>
@@ -17,12 +18,11 @@
             </div>
             <div class="menu_list">
                 <img class="menu_btn menu_btn_off" src="img/btn_mypagen.png" />
-                シフト登録：
                 <a href="#">
-                    <div class="radius day_to_form menu_btns">日にちから</div>
+                    <div class="radius day_to_form menu_btns">日にちから<br />登録</div>
                 </a>
                 <a href="#">
-                    <div class="radius shift_to_form menu_btns">シフトから</div>
+                    <div class="radius shift_to_form menu_btns">シフトから<br />登録</div>
                 </a>
                 <span class="select_date">
                     年月変更：
