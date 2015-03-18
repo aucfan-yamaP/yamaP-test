@@ -35,7 +35,8 @@
                             <option <?php if(date('Y-m',$this_day_strtotime) == date('Y-m',strtotime($real_today.' +'.$ii.' month'))) echo 'selected'; ?> value="<?php echo date('Y-m',strtotime($real_today.' +'.$ii.' month')); ?>"><?php echo date('Y/m',strtotime($real_today.' +'.$ii.' month')); ?></option>
                         <?php endfor; ?>
                     </select>
-                </span>
+                </span><br /><br />
+                <a href="?date=">本日に戻る</a>
             </div>
             <div class="attention">
                 ※登録が完了したら下部の「選択終了」ボタンを押下してください
