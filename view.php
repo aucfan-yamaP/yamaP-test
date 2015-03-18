@@ -65,7 +65,7 @@
             <div class="status_bar">
                 <span class="status_shift">シフトから選択：<span class="shift_val"></span>にしたい日を選択してください</span>
                 <span class="status_day">日付から選択：シフトを入力したい日付を選択してください</span>
-                <div class="end_select radius_light"><img src="img/select_end.png" /></div>
+                <div class="end_select radius_light"><a href=""><img src="img/select_end.png" /></a></div>
             </div>
             <div class="shift_box">
                 <div class="contents radius">

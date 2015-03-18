@@ -95,7 +95,7 @@ $(function(){
         if($('.main_table').hasClass('select')) $('.main_table').removeClass('select');
         $('.status_bar .status_shift').css('display','none');
         $(this).css('display','none');
-        location.href = '';
+        return true;
     });
 
     $('.shadow').click(function(){
