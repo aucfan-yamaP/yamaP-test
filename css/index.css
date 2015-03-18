@@ -147,6 +147,7 @@ div.status_bar span{
 	font-size:17px;
 	border:solid 1px black;
 	cursor:pointer;
+	padding:5px;
 }
 .end_select{
 	text-align: center;
