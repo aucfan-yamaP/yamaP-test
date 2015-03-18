@@ -36,7 +36,7 @@
                         <?php endfor; ?>
                     </select>
                 </span><br /><br />
-                <a href="?date=">本日に戻る</a>
+                <a href="?date=">今月に戻る</a>
             </div>
             <div class="attention">
                 ※登録が完了したら下部の「選択終了」ボタンを押下してください
