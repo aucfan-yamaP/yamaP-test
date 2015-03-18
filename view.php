@@ -37,8 +37,8 @@
                         <?php foreach($days as $weekend_no => $day): ?>
                             <td class="days w<?php echo $weekend_no; ?><?php if($day['type'] != 'main'): ?> not_main<?php endif; ?>" data-date="<?php echo $day['day']; ?>" data-dateFull="<?php echo $day['day_full']; ?>">
                                 <span class="day<?php if($day['day_full'] == $real_today): ?> today<?php endif; ?>"><?php echo $day['day']; ?></span><br />
-                                <span class="day_shift"></span>
-                                <span class="mark"><img class="loading" src="img/loading.gif" /><img class="check" src="img/check.png" /><img class="batsu" src="img/batsu.png" /></span>
+                                <span class="day_shift" data-shiftVal="<?php if(isset($db_data[$day['day_full']])) echo $db_data[$day['day_full']]; ?>"><?php if(isset($db_data[$day['day_full']])) echo $db_data[$day['day_full']]; ?></span>
+                                <span class="mark"><img class="loading" src="img/loading<?php if($weekend_no == 0 || $weekend_no == 6) echo $weekend_no; ?>.gif" /><img class="check" src="img/check.png" /><img class="batsu" src="img/batsu.png" /></span>
                                 <input type="hidden" name="date_<?php echo $day['day_full']; ?>" value="" />
                             </td>
                         <?php endforeach; ?>
@@ -47,6 +47,7 @@
             </table>
             <div class="status_bar">
                 <span class="status_shift">シフトから選択：<span class="shift_val"></span>にしたい日を選択してください</span>
+                <span class="status_day">日付から選択：シフトを入力したい日付を選択してください</span>
                 <div class="end_select radius_light"><img src="img/select_end.png" /></div>
             </div>
             <div class="shift_box">

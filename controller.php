@@ -47,6 +47,7 @@
 
     $calendar_main = array();
     $calendar_row_count = 0;
+    $calendaer_last_date = '';
     foreach($calendar_before_month_days as $key => $val)
     {
         $calendar_main[$calendar_row_count][$key]['type'] = 'before';
@@ -58,6 +59,7 @@
         $calendar_main[$calendar_row_count][date('w',strtotime($today_y.'-'.$today_m.'-'.$i))]['type'] = 'main';
         $calendar_main[$calendar_row_count][date('w',strtotime($today_y.'-'.$today_m.'-'.$i))]['day'] = $i;
         $calendar_main[$calendar_row_count][date('w',strtotime($today_y.'-'.$today_n.'-'.$i))]['day_full'] = $today_y.'-'.$today_m.'-'.$i;
+        $calendaer_last_date = $today_y.'-'.$today_m.'-'.$i;
         if(date('w',strtotime($today_y.'-'.$today_m.'-'.$i)) == 6) $calendar_row_count++;
     }
     foreach($calendar_after_month_days as $key => $val)
@@ -65,6 +67,7 @@
         $calendar_main[$calendar_row_count][$key]['type'] = 'after';
         $calendar_main[$calendar_row_count][$key]['day'] = $val;
         $calendar_main[$calendar_row_count][$key]['day_full'] = $after_y.'-'.$after_n.'-'.$val;
+        $calendaer_last_date = $after_y.'-'.$after_n.'-'.$val;
     }
-
+    require_once('db.php');
 ?>

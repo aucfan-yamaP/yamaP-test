@@ -1,3 +1,6 @@
+body.select{
+	background-color: #B2B2B2;
+}
 div.this_ym{
 	width:95%;
 	height:10%;
@@ -67,6 +70,7 @@ td.days .today{
 }
 td.days .day_shift{
 	font-size: 13px;
+	position: absolute;
 }
 table.select td.days{
 	cursor:pointer;
