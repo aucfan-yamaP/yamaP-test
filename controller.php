@@ -1,4 +1,5 @@
 <?php
+    require_once('auth.php');
     require_once('conf.php');
 
     $this_day = (isset($_GET['date']) && strtotime($_GET['date']) > strtotime('2010-01-01'))? $_GET['date']:date('Y-m-d');
