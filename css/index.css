@@ -26,6 +26,9 @@ div.menu{
 	position:fixed;
 	right:50px;
 }
+div.menu_list{
+	background-color: #CCCCCC;
+}
 img.menu_btn_on,img.menu_btn_off{
 	cursor:pointer;
 }
@@ -70,9 +73,10 @@ td.days .day{
 	font-size: 20px;
 }
 td.days .today{
-	background-color:#FFD800;
+	background-color:#78BD36;
 	border-radius:10px;
 	padding:2px;
+	color:white;
 }
 td.days .day_shift{
 	font-size: 13px;
