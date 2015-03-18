@@ -22,6 +22,7 @@ $(function(){
         $('body').addClass('select');
         $('div.attention').css('display','block');
         $(window).scrollTop(100);
+        $('.menu_btn').css('display','none');
         return false;
     });
     $('.shift_box .contents li').click(function(){
@@ -42,6 +43,7 @@ $(function(){
         $('body').addClass('select');
         $('div.attention').css('display','block');
         $(window).scrollTop(100);
+        $('.menu_btn').css('display','none');
     });
 
     $('table.main_table td.days').click(function(){
