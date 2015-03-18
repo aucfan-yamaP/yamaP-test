@@ -17,11 +17,12 @@
             </div>
             <div class="menu_list">
                 <img class="menu_btn menu_btn_off" src="img/btn_mypagen.png" />
+                シフト登録：
                 <a href="#">
-                    <div class="radius shift_to_form menu_btns">シフトから登録</div>
+                    <div class="radius day_to_form menu_btns">日にちから</div>
                 </a>
                 <a href="#">
-                    <div class="radius day_to_form menu_btns">日にちから登録</div>
+                    <div class="radius shift_to_form menu_btns">シフトから</div>
                 </a>
                 <span class="select_date">
                     年月変更：
