@@ -155,7 +155,7 @@ div.status_bar span{
 }
 .end_select{
 	text-align: center;
-	margin-top:30px;
+	margin:10px 0;
 	display:none;
 }
 .end_select img{

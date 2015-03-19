@@ -100,8 +100,9 @@ $(function(){
         return true;
     });
 
-    $('table.main_table').touchwipe({
+    $('table.main_table,.menu_btn').touchwipe({
          wipeLeft:function(){
+             $('.menu_btn').click();
          },
          wipeRight:function(){
              $('.menu_btn').click();
