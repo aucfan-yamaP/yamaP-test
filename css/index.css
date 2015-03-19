@@ -1,3 +1,9 @@
+a{
+	font-weight:bolder;
+}
+a:hover{
+	text-decoration:none;	
+}
 body.select{
 	background-color: #B2B2B2;
 }
