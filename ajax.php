@@ -1,10 +1,13 @@
 <?php
+    require_once('auth.php');
+    require_once('conf.php');
+
     $shift = $_POST['shift'];
     $target_date = $_POST['date'];
     $del_flg = $_POST['del'];
     $ret = '';
-    if(!isset($_COOKIE['r_m_33_u'])) exit;
-    $user = $_COOKIE['r_m_33_u'];
+    if(!isset($cookie_auth_user)) exit;
+    $user = $cookie_auth_user;
     
     $mongo = new MongoClient();
     $db = $mongo->selectDB('calendar');
