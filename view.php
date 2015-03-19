@@ -9,7 +9,7 @@
         <script src="js/jquery.cookie.js"></script>
         <script src="js/swipe.js"></script>
         <script src="js/index.js"></script>
-        <title>☆まおシフト☆</title>
+        <title>まおｼﾌﾄ</title>
     </head>
     <body>
         <form action="update" method="post" enctype="multipart/form-data" name="cal_form" id="cal_form">
