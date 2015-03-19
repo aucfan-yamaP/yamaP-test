@@ -1,5 +1,6 @@
 <?php
     $user = (isset($cookie_auth_user))? $cookie_auth_user:'guest';
+    if($user == 'ryota') $user = 'mao';
     $mongo = new MongoClient();
     $db = $mongo->selectDB('calendar');
     $shift_collection = $db->shift;
