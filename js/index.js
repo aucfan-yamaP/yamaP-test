@@ -100,14 +100,18 @@ $(function(){
         return true;
     });
 
-    $('body').touchwipe({
+    $('table.main_table').touchwipe({
          wipeLeft:function(){
              $('.menu_btn').click();
-             alert('来てます');
          },
          wipeRight:function(){
              $('.menu_btn').click();
-             alert('来てます');
+         },
+         wipeUp:function(){
+             return true;
+         },
+         wipeDown:function(){
+             return true;             
          },
          min_move_x: 20,
          min_move_y: 20,
