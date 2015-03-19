@@ -34,7 +34,7 @@
     	 
     	 function onTouchMove(e) {
     		 if(config.preventDefaultEvents) {
-    			 e.preventDefault();
+    			 //e.preventDefault();
     		 }
     		 if(isMoving) {
 	    		 var x = e.touches[0].pageX;
