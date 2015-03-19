@@ -112,7 +112,7 @@ $(function(){
          wipeDown:function(){
              return true;             
          },
-         min_move_x: 20,
+         min_move_x: 300,
          min_move_y: 300,
          preventDefaultEvents: true
     });
