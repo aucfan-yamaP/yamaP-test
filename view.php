@@ -4,6 +4,7 @@
         <meta name="robots" content="none">
         <link type="text/css" rel="stylesheet" href="css/index.css" />
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="js/swipe.js"></script>
         <script src="js/index.js"></script>
         <title>☆まおシフト☆</title>
     </head>
