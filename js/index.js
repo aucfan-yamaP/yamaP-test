@@ -103,9 +103,11 @@ $(function(){
     $('body').touchwipe({
          wipeLeft:function(){
              $('.menu_btn').click();
+             alert('来てます');
          },
          wipeRight:function(){
              $('.menu_btn').click();
+             alert('来てます');
          },
          min_move_x: 20,
          min_move_y: 20,
