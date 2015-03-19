@@ -125,6 +125,11 @@ $(function(){
          preventDefaultEvents: true
     });
 
+    $('span.logout a').click(function(){
+        location.href = '?logout=1';
+        return false;
+    });
+
     $('.shadow').click(function(){
         $(this).parent('div').fadeOut('fast');
     });

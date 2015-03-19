@@ -4,6 +4,7 @@
         <meta name="robots" content="none">
         <link type="text/css" rel="stylesheet" href="css/index.css" />
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
         <script src="js/swipe.js"></script>
         <script src="js/index.js"></script>
         <title>☆まおシフト☆</title>
@@ -23,9 +24,10 @@
                 <img class="menu_btn_grey" src="img/btn_mypagen_grey.png" />
             </div>
             <div class="menu_list">
+                シフト登録：
                 <img class="menu_btn menu_btn_off" src="img/btn_mypagen.png" />
                 <a href="#">
-                    <div class="radius day_to_form menu_btns">日にちから<br />登録</div>
+                    <div style="margin-top:0px;" class="radius day_to_form menu_btns">日にちから<br />登録</div>
                 </a>
                 <a href="#">
                     <div class="radius shift_to_form menu_btns">シフトから<br />登録</div>
@@ -44,6 +46,9 @@
                 </span><br /><br />
                 <span class="funny_img">
                     <a href="?date="><img src="img/<?php echo (rand(0,1) == 0)? 'ryota':'mao'; ?>0.png" />&nbsp;&nbsp;今月に戻る</a>
+                </span>
+                <span class="logout">
+                    <!-- <a href="#">ログアウト</a> -->
                 </span>
             </div>
             <div class="attention">

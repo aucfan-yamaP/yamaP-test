@@ -42,7 +42,8 @@ div.menu{
 	right:50px;
 }
 div.menu_list{
-	background-color: #CCCCCC;
+	background-color:#9E6A5A;
+	color:#FFFFFF;
 }
 img.menu_btn_on,img.menu_btn_off{
 	cursor:pointer;
@@ -51,9 +52,13 @@ img.menu_btn_grey{
 	cursor:not-allowed;
 	display:none;
 }
+span.logout{
+	display:block;
+	margin:100px 0 0 10px;
+}
 div.menu_list a{
 	text-decoration: none;
-	color:#7D6A55;
+	color:#F5F7F4;
 }
 span.funny_img{
 	margin:0 5px 0;
@@ -172,7 +177,7 @@ div.status_bar span{
 }
 .menu_list .menu_btns{
 	text-align:center;
-	background-color:#EEEEEE;
+	background-color:#7F000E;
 	margin:25px auto;
 	width:90%;
 	font-size:17px;
@@ -182,7 +187,8 @@ div.status_bar span{
 }
 .end_select{
 	text-align: center;
-	margin:10px 0;
+	margin:10px 0 30px;
+	padding-bottom: 10px;
 	display:none;
 }
 .end_select img{
