@@ -102,16 +102,10 @@ $(function(){
 
     $('body').touchwipe({
          wipeLeft:function(){
-             menuToggle($('.menu_btn'));
+             $('.menu_btn').click();
          },
          wipeRight:function(){
-             menuToggle($('.menu_btn'));
-         },
-         wipeUp:function(){
-             
-         },
-         wipeDown:function(){
-             
+             $('.menu_btn').click();
          },
          min_move_x: 20,
          min_move_y: 20,
