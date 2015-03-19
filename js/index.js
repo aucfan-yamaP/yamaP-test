@@ -112,8 +112,8 @@ $(function(){
          wipeDown:function(){
              return true;             
          },
-         min_move_x: 300,
-         min_move_y: 300,
+         min_move_x: 100,
+         min_move_y: 100,
          preventDefaultEvents: true
     });
 
