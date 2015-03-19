@@ -41,7 +41,9 @@
                         <?php endfor; ?>
                     </select>
                 </span><br /><br />
-                <a href="?date=">今月に戻る</a>
+                <span class="funny_img">
+                    <a href="?date="><img src="img/<?php echo (rand(0,1) == 0)? 'ryota':'mao'; ?>0.png" />&nbsp;&nbsp;今月に戻る</a>
+                </span>
             </div>
             <div class="attention">
                 ※登録が完了したら下部の「選択完了」ボタンを押下してください

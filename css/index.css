@@ -45,6 +45,14 @@ div.menu_list a{
 	text-decoration: none;
 	color:#7D6A55;
 }
+span.funny_img{
+	margin:0 20px 0;
+	display: block;
+}
+span.funny_img img{
+	width:100px;
+	height:100px;
+}
 div.attention{
 	font-size: 11px;
 	display: none;
