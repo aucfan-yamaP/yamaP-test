@@ -102,7 +102,6 @@ $(function(){
 
     $('table.main_table').touchwipe({
          wipeLeft:function(){
-             $('.menu_btn').click();
          },
          wipeRight:function(){
              $('.menu_btn').click();
@@ -114,7 +113,7 @@ $(function(){
              return true;             
          },
          min_move_x: 20,
-         min_move_y: 20,
+         min_move_y: 100,
          preventDefaultEvents: true
     });
 
