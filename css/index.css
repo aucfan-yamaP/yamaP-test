@@ -11,7 +11,8 @@ div.account_img{
 	display: inline-block;
 	width:65px;
 	position:absolute;
-	top:2.5px
+	top:2.5px;
+	cursor:pointer;
 }
 div.account_img img{
 	width:60px;
@@ -107,7 +108,7 @@ td.days .day{
 	font-size: 20px;
 }
 td.days .today{
-	background-color:#78BD36;
+	background-color:#9E6A5A;
 	border-radius:10px;
 	padding:2px;
 	color:white;

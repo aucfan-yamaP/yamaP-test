@@ -82,7 +82,7 @@
             </div>
             <div class="shift_box">
                 <div class="contents radius">
-                    シフトを選択してちょ！：<br />
+                    <span class="select_shift_day"></span>シフトを選択してちょ！：<br />
                     <ul>
                         <?php foreach($conf['MAO_SHIFTS'] as $shift_name => $info): ?>
                             <li class="radius_light" data-val="<?php echo $shift_name; ?>">

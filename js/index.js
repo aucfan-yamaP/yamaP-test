@@ -16,7 +16,8 @@ $(function(){
     });
     $('.shift_to_form').click(function(){
         menuToggle($('.menu_btn_off'));
-        $('.shift_box').fadeIn('fast');
+    $('span.select_shift_day').text('一括選択する');
+    $('.shift_box').fadeIn('fast');
         return false;
     });
     $('.day_to_form').click(function(){
@@ -77,6 +78,7 @@ $(function(){
             $(lis[i]).removeClass('on');
             if($(lis[i]).attr('data-val') == $(this).find('.day_shift').attr('data-shiftVal')) $(lis[i]).addClass('on');
         }
+        $('span.select_shift_day').text($('span.this_m').text()+'/'+day_select.attr('data-date')+'の');
         $('.shift_box').fadeIn('fast');
     });
 
