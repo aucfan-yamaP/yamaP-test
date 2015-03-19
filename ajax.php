@@ -3,15 +3,17 @@
     $target_date = $_POST['date'];
     $del_flg = $_POST['del'];
     $ret = '';
+    if(!isset($_COOKIE['r_m_33_u'])) exit;
+    $user = $_COOKIE['r_m_33_u'];
     
     $mongo = new MongoClient();
     $db = $mongo->selectDB('calendar');
     $shift_collection = $db->shift;
-    $select_query = array('date'=>new MongoDate(strtotime($target_date.' 00:00:00 +0900')),'status'=>0);
+    $select_query = array('date'=>new MongoDate(strtotime($target_date.' 00:00:00 +0900')),'status'=>0,'user'=>$user);
     $ret_count = $shift_collection->count($select_query);
     if($ret_count == 0)
     {
-        $ret = $shift_collection->insert(array('_id'=>$shift_collection->count()+1,'shift'=>$shift,'date'=>new MongoDate(strtotime($target_date.' 00:00:00 +0900')),'status'=>0,'created_at'=>new MongoDate(),'updated_at'=>new MongoDate()));
+        $ret = $shift_collection->insert(array('_id'=>$shift_collection->count()+1,'shift'=>$shift,'user'=>$user,'date'=>new MongoDate(strtotime($target_date.' 00:00:00 +0900')),'status'=>0,'created_at'=>new MongoDate(),'updated_at'=>new MongoDate()));
     }
     if($ret_count >= 1)
     {

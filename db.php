@@ -1,8 +1,9 @@
 <?php
+    $user = (isset($cookie_auth_user))? $cookie_auth_user:'guest';
     $mongo = new MongoClient();
     $db = $mongo->selectDB('calendar');
     $shift_collection = $db->shift;
-    $ret = $shift_collection->find(array('status'=>0,'date'=>array('$gte'=>new MongoDate(strtotime($calendar_main[0][0]['day_full'].' 00:00:00 +0900')),'$lte'=> new MongoDate(strtotime($calendaer_last_date.' 00:00:00 +0900')))));
+    $ret = $shift_collection->find(array('status'=>0,'user'=>$user,'date'=>array('$gte'=>new MongoDate(strtotime($calendar_main[0][0]['day_full'].' 00:00:00 +0900')),'$lte'=> new MongoDate(strtotime($calendaer_last_date.' 00:00:00 +0900')))));
     $db_data = array();
     foreach($ret as $r)
     {
