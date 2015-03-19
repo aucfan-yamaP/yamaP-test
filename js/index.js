@@ -101,10 +101,18 @@ $(function(){
     });
 
     $('body').touchwipe({
-         wipeLeft: function() { alert('left'); },
-         wipeRight: function() { alert('right'); },
-         wipeUp: function() { alert('up'); },
-         wipeDown: function() { alert('down'); },
+         wipeLeft:function(){
+             menuToggle($('.menu_btn'));
+         },
+         wipeRight:function(){
+             menuToggle($('.menu_btn'));
+         },
+         wipeUp:function(){
+             
+         },
+         wipeDown:function(){
+             
+         },
          min_move_x: 20,
          min_move_y: 20,
          preventDefaultEvents: true
