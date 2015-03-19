@@ -53,10 +53,8 @@
 	    		 else if(Math.abs(dy) >= config.min_move_y) {
 		    			cancelTouch();
 		    			if(dy > 0) {
-		    				config.wipeDown();
 		    			}
 		    			else {
-		    				config.wipeUp();
 		    			}
 		    		 }
     		 }
