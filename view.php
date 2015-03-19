@@ -20,6 +20,7 @@
                 <a href="#">
                     <img class="menu_btn menu_btn_on" src="img/btn_mypagen.png" />
                 </a>
+                <img class="menu_btn_grey" src="img/btn_mypagen_grey.png" />
             </div>
             <div class="menu_list">
                 <img class="menu_btn menu_btn_off" src="img/btn_mypagen.png" />

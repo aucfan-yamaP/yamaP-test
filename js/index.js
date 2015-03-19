@@ -28,6 +28,7 @@ $(function(){
         $('div.attention').css('display','block');
         $(window).scrollTop(100);
         $('.menu_btn').css('display','none');
+        $('.menu_btn_grey').css('display','block');
         return false;
     });
     $('.shift_box .contents li').click(function(){
@@ -49,6 +50,7 @@ $(function(){
         $('div.attention').css('display','block');
         $(window).scrollTop(100);
         $('.menu_btn').css('display','none');
+        $('.menu_btn_grey').css('display','block');
     });
 
     $('table.main_table td.days').click(function(){
@@ -127,8 +129,13 @@ $(function(){
         $(this).parent('div').fadeOut('fast');
     });
     function menuToggle(switch_obj){
-        if(switch_obj.hasClass('menu_btn_on')) $('.menu_list').css('display','block');
-        if(switch_obj.hasClass('menu_btn_off')) $('.menu_list').css('display','none');        
+        if(switch_obj.hasClass('menu_btn_on'))
+        {
+            $('.menu_list').css('display','block');
+        }
+        if(switch_obj.hasClass('menu_btn_off')){
+            $('.menu_list').css('display','none');
+        }
     }
     function ajaxCheck(obj,shift,delFlg){
         obj.find('img.batsu').css('display','none');
