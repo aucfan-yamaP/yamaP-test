@@ -1,6 +1,11 @@
 $(function(){
     var shift_btn = '';
     var day_select = '';
+    $('div.account_img img').click(function(){
+        var rnd_no = Math.floor(Math.random () * 3) + 1;
+        var src = $(this).attr('src');
+        $(this).attr('src',src.replace(/\d/,rnd_no));
+    });
     $('.menu_btn').click(function(){
         if($('table.main_table').hasClass('select') || $('table.main_table').hasClass('selectday')) return false;
         menuToggle($(this));

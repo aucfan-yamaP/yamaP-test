@@ -11,7 +11,7 @@
     <body>
         <form action="update" method="post" enctype="multipart/form-data" name="cal_form" id="cal_form">
             <div class="account_img">
-                <img src="img/bell1.png" />
+                <img src="img/bell<?php echo rand(1,3); ?>.png" />
             </div>
             <div class="this_ym">
                 <span class="date_title"><span class="this_y"><?php echo $today_y; ?>&nbsp;/&nbsp;</span><span class="this_m"><?php echo $today_n; ?></span>月</span><br />

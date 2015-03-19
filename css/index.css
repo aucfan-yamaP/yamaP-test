@@ -12,13 +12,12 @@ div.account_img img{
 	height:60px;
 }
 div.this_ym{
-	width:95%;
 	height:10%;
 	text-align: right;
 	vertical-align: bottom;
 	display:inline-block;
 	position:relative;
-	right:50px;
+	left:150px;
 }
 div.this_ym .this_y{
 	font-size: 25px;
