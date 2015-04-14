@@ -269,3 +269,9 @@ div.shadow{
 	font-size:13px;
 	display: none;
 }
+ul.shift_info{
+	font-size:11px;
+	border:solid 1px white;
+	margin:10px 0 0 0;
+	padding:0 0 0 5px;
+}

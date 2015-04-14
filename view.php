@@ -49,7 +49,18 @@
                             <option <?php if(date('Y-m',$this_day_strtotime) == date('Y-m',strtotime($real_today.' +'.$ii.' month'))) echo 'selected'; ?> value="<?php echo date('Y-m',strtotime($real_today.' +'.$ii.' month')); ?>"><?php echo date('Y/m',strtotime($real_today.' +'.$ii.' month')); ?></option>
                         <?php endfor; ?>
                     </select>
-                </span><br /><br />
+                </span>
+                <?php if($view_only): ?>
+                    <ul class="shift_info">
+                        <li>●シフト時間</li>
+                        <?php foreach($conf['MAO_SHIFTS'] as $key => $val): ?>
+                                <li>
+                                    <?php echo $key; ?>：<br />　<?php echo $val['time_start'].'〜'.$val['time_end']; ?>
+                                </li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
+                <br /><br />
                 <span class="funny_img">
                     <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?><?php if($view_only): ?>/top.php<?php endif; ?>"><?php if(!$view_only): ?><img src="img/<?php echo (rand(0,1) == 0)? 'ryota':'mao'; ?>0.png" /><?php endif; ?>&nbsp;&nbsp;今月に戻る</a>
                 </span>
