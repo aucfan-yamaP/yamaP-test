@@ -175,6 +175,7 @@ div.status_bar span{
 }
 .menu_list .menu_btn_off{
 	position:absolute;
+	top:10px;
 	left:-73px;
 	z-index:2;
 }
