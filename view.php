@@ -51,7 +51,7 @@
                     </select>
                 </span><br /><br />
                 <span class="funny_img">
-                    <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>"><?php if(!$view_only): ?><img src="img/<?php echo (rand(0,1) == 0)? 'ryota':'mao'; ?>0.png" /><?php endif; ?>&nbsp;&nbsp;今月に戻る</a>
+                    <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?><?php if(!$view_only): ?>/top.php<?php endif; ?>"><?php if(!$view_only): ?><img src="img/<?php echo (rand(0,1) == 0)? 'ryota':'mao'; ?>0.png" /><?php endif; ?>&nbsp;&nbsp;今月に戻る</a>
                 </span>
                 <span class="logout">
                     <!-- <a href="#">ログアウト</a> -->
