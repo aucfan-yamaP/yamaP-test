@@ -1,5 +1,6 @@
 <?php
     $user = (isset($cookie_auth_user))? $cookie_auth_user:'guest';
+    if($view_only) $user = 'mao';
     if($user == 'ryota') $user = 'mao';
     $mongo = new MongoClient();
     $db = $mongo->selectDB('calendar');
