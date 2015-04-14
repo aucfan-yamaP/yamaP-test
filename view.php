@@ -2,7 +2,7 @@
     <head>
         <meta name="viewport" content="width=device-width,height=device-height">
         <meta name="robots" content="none">
-        <link type="text/css" rel="stylesheet" href="css/index.css" />
+        <link type="text/css" rel="stylesheet" href="css/index.css?<?php echo date('YmdHis'); ?>" />
         <link rel="apple-touch-icon" href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/maoshift_favi.png" />
         <link rel="shortcut icon" href="favicon.ico" /> 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
