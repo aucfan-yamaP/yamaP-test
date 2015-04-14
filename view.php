@@ -26,14 +26,18 @@
                 <img class="menu_btn_grey" src="img/btn_mypagen_grey.png" />
             </div>
             <div class="menu_list">
-                シフト登録：
+                <?php if(!$view_only): ?>
+                    シフト登録：
+                <?php endif; ?>
                 <img class="menu_btn menu_btn_off" src="img/btn_mypagen.png" />
-                <a href="#">
-                    <div style="margin-top:0px;" class="radius day_to_form menu_btns">日にちから<br />登録</div>
-                </a>
-                <a href="#">
-                    <div class="radius shift_to_form menu_btns">シフトから<br />登録</div>
-                </a>
+                <?php if(!$view_only): ?>
+                    <a href="#">
+                        <div style="margin-top:0px;" class="radius day_to_form menu_btns">日にちから<br />登録</div>
+                    </a>
+                    <a href="#">
+                        <div class="radius shift_to_form menu_btns">シフトから<br />登録</div>
+                    </a>
+                <?php endif; ?>
                 <span class="select_date">
                     年月変更：
                     <select name="select_date" id="select_date">
@@ -47,7 +51,7 @@
                     </select>
                 </span><br /><br />
                 <span class="funny_img">
-                    <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>"><img src="img/<?php echo (rand(0,1) == 0)? 'ryota':'mao'; ?>0.png" />&nbsp;&nbsp;今月に戻る</a>
+                    <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>"><?php if(!$view_only): ?><img src="img/<?php echo (rand(0,1) == 0)? 'ryota':'mao'; ?>0.png" /><?php endif; ?>&nbsp;&nbsp;今月に戻る</a>
                 </span>
                 <span class="logout">
                     <!-- <a href="#">ログアウト</a> -->
