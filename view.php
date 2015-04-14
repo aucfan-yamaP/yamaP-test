@@ -54,9 +54,10 @@
                     <ul class="shift_info">
                         <li>●シフト時間</li>
                         <?php foreach($conf['MAO_SHIFTS'] as $key => $val): ?>
-                                <li>
-                                    <?php echo $key; ?>：<br />　<?php echo $val['time_start'].'〜'.$val['time_end']; ?>
-                                </li>
+                            <?php if($key == 'off') continue; ?>
+                            <li>
+                                <?php echo $key; ?>：<br />　<?php echo $val['time_start'].'〜'.$val['time_end']; ?>
+                            </li>
                         <?php endforeach; ?>
                     </ul>
                 <?php endif; ?>
