@@ -42,7 +42,7 @@
     $calendar_before_month_days = array();
     for($i = 0;$i<$today_month_first_weekend;$i++)
     {
-        $calendar_before_month_days[$i] = $before_lj-($today_month_first_weekend-$i);
+        $calendar_before_month_days[$i] = $before_lj-($today_month_first_weekend-1-$i);
     }
 
     $calendar_after_month_days = array();
