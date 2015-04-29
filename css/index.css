@@ -1,3 +1,45 @@
+body.spring01{
+	background: url("/img/spring01.jpg");
+}
+body.spring02{
+	background: url("/img/spring02.jpg");
+}
+body.spring03{
+	background: url("/img/spring03.jpg");
+}
+body.summer01{
+	background: url("/img/summer01.jpg");
+}
+body.summer02{
+	background: url("/img/summer02.jpg");
+}
+body.summer03{
+	background: url("/img/summer03.jpg");
+}
+body.autumn01{
+	background: url("/img/autumn01.jpg");
+}
+body.autumn02{
+	background: url("/img/autumn02.jpg");
+}
+body.autumn03{
+	background: url("/img/autumn03.jpg");
+}
+body.winter01{
+	background: url("/img/winter01.jpg");
+}
+body.winter02{
+	background: url("/img/winter02.jpg");
+}
+body.winter03{
+	background: url("/img/winter03.jpg");
+}
+body.season div.this_ym,
+body.season div.attention,
+body.season div.status_bar{
+	text-shadow: #FFF 1px 1px 0px, #FFF -1px 1px 0px,
+     #FFF 1px -1px 0px, #FFF -1px -1px 0px;
+ }
 a{
 	font-weight:bolder;
 }

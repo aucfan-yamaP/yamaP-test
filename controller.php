@@ -100,7 +100,17 @@
     }
     unset($jsons);
 
-//print_r($holiday_array); exit;
-
+    $season = '';
+    $season_no = '';
+    if(strtotime('2015-05-05') <= strtotime($real_today))
+    {
+        $season = 'season';
+        $season .= $conf['SEASON'][$today_n];
+        $season_no = ($today_j%3 == 0)? '03':'';
+        if(!strlen($season_no))
+        {
+            $season_no = ($today_j%2 == 0)? '02':'01';
+        }
+    }
     require_once('db.php');
 ?>

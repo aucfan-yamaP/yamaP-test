@@ -18,6 +18,20 @@
             5 => 'Fri',
             6 => 'Sat',
         ),
+        'SEASON' => array(
+            1 => 'winter',
+            2 => 'winter',
+            3 => 'winter',
+            4 => 'spring',
+            5 => 'spring',
+            6 => 'spring',
+            7 => 'summer',
+            8 => 'summer',
+            9 => 'summer',
+            10 => 'autumn',
+            11 => 'autumn',
+            12 => 'winter',
+        ),
         'MAO_SHIFTS' => array(
             'off' => array(
                 'time_start' => '00:00',
