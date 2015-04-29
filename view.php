@@ -85,8 +85,8 @@
                         <?php foreach($days as $weekend_no => $day): ?>
                             <td class="days w<?php echo $weekend_no; ?><?php if($day['type'] != 'main'): ?> not_main<?php endif; ?><?php if(isset($holiday_array[$day['day_full']])): ?> holi<?php endif; ?>" data-date="<?php echo $day['day']; ?>" data-dateFull="<?php echo $day['day_full']; ?>">
                                 <span class="day<?php if($day['day_full'] == $real_today): ?> today<?php endif; ?>"><?php echo $day['day']; ?></span><br />
-                                <span class="day_shift" data-shiftVal="<?php if(isset($db_data[$day['day_full']])) echo $db_data[$day['day_full']]; ?>"><?php if(isset($db_data[$day['day_full']])) echo $db_data[$day['day_full']]; ?></span><br />
-                                <span class="mark"><img class="loading" src="img/loading<?php if($weekend_no == 0 || $weekend_no == 6) echo $weekend_no; ?>.gif" /><img class="check" src="img/check.png" /><img class="batsu" src="img/batsu.png" /></span>
+                                <span class="day_shift" data-shiftVal="<?php if(isset($db_data[$day['day_full']])) echo $db_data[$day['day_full']]; ?>"><?php if(isset($db_data[$day['day_full']])) echo $db_data[$day['day_full']]; ?></span>
+                                <span class="mark"><img class="loading" src="img/loading<?php if($weekend_no == 0 || $weekend_no == 6) echo $weekend_no; ?>.gif" /><img class="check" src="img/check.png" /><img class="batsu" src="img/batsu.png" /></span><br />
                                 <input type="hidden" name="date_<?php echo $day['day_full']; ?>" value="" />
                                 <?php if(isset($holiday_array[$day['day_full']])): ?><div class="holiday"><?php echo $holiday_array[$day['day_full']]; ?></div><?php endif; ?>
                             </td>
