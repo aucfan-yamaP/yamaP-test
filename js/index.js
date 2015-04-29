@@ -129,10 +129,10 @@ $(function(){
 
     $('tr.week_tr').touchwipe({
          wipeLeft:function(){
-             location.href = '?date='+$('.main_table').attr('data-prevcal');
+             location.href = '?date='+$('.main_table').attr('data-nextcal');
          },
          wipeRight:function(){
-             location.href = '?date='+$('.main_table').attr('data-nextcal');
+             location.href = '?date='+$('.main_table').attr('data-prevcal');
          },
          wipeUp:function(){
              return true;
