@@ -11,7 +11,7 @@
         <script src="js/index.js"></script>
         <title>まおｼﾌﾄ</title>
     </head>
-    <body class="<?php echo $season.$season_no; ?>">
+    <body class="season spring01<?php echo $season.$season_no; ?>">
         <form action="update" method="post" enctype="multipart/form-data" name="cal_form" id="cal_form">
             <div class="account_img">
                 <img src="img/bell<?php echo rand(1,3); ?>.png" />
