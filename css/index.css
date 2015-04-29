@@ -120,6 +120,16 @@ td.days .day_shift{
 table.select td.days{
 	cursor:pointer;
 }
+td.holi span.holiday{
+	font-size:8px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	webkit-text-overflow: ellipsis;
+	  -o-text-overflow: ellipsis;
+	width:90%;
+	display:inline-block;
+}
 td.days .mark{
 	
 }
@@ -141,6 +151,10 @@ span.w_radi{
 }
 .w6{
 	background-color:#5881B0 !important;
+	color:#ffffff;
+}
+.holi{
+	background-color:#F86263 !important;
 	color:#ffffff;
 }
 .not_main{

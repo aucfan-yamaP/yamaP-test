@@ -64,7 +64,7 @@
     {
         $calendar_main[$calendar_row_count][date('w',strtotime($today_y.'-'.$today_m.'-'.$i))]['type'] = 'main';
         $calendar_main[$calendar_row_count][date('w',strtotime($today_y.'-'.$today_m.'-'.$i))]['day'] = $i;
-        $calendar_main[$calendar_row_count][date('w',strtotime($today_y.'-'.$today_n.'-'.$i))]['day_full'] = $today_y.'-'.$today_m.'-'.$i;
+        $calendar_main[$calendar_row_count][date('w',strtotime($today_y.'-'.$today_n.'-'.$i))]['day_full'] = $today_y.'-'.$today_n.'-'.$i;
         $calendaer_last_date = $today_y.'-'.$today_m.'-'.$i;
         if(date('w',strtotime($today_y.'-'.$today_m.'-'.$i)) == 6) $calendar_row_count++;
     }
@@ -75,5 +75,31 @@
         $calendar_main[$calendar_row_count][$key]['day_full'] = $after_y.'-'.$after_n.'-'.$val;
         $calendaer_last_date = $after_y.'-'.$after_n.'-'.$val;
     }
+
+    $holiday_array = array();
+    $filenames = array();
+    $filenames['today'] = 'json/'.$today_y.$today_m.'.js';
+    $filenames['before'] = 'json/'.$before_y.$before_m.'.js';
+    $filenames['after'] = 'json/'.$after_y.$after_m.'.js';
+
+    $jsons = array();
+    $handles = array();
+    foreach($filenames as $when => $filename)
+    {
+        $jsons[$when] = json_decode('['.file_get_contents($filename,ture).']',true);
+    }
+
+    foreach ($jsons as $json_ret)
+    {
+        foreach($json_ret as $json_val)
+        {
+            if(!strlen($json_val['jHoliday'])) continue;
+            $holiday_array[$json_val['jYear'].'-'.$json_val['jMonth'].'-'.$json_val['jDay']] = $json_val['jHoliday'];
+        }
+    }
+    unset($jsons);
+
+//print_r($holiday_array); exit;
+
     require_once('db.php');
 ?>
