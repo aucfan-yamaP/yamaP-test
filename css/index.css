@@ -40,6 +40,9 @@ body.season div.status_bar{
 	text-shadow: #FFF 1px 1px 0px, #FFF -1px 1px 0px,
      #FFF 1px -1px 0px, #FFF -1px -1px 0px;
  }
+ body.season table{
+ 	opacity:0.85;
+ }
 a{
 	font-weight:bolder;
 }
