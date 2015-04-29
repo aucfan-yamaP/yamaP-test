@@ -94,6 +94,7 @@
         foreach($json_ret as $json_val)
         {
             if(!strlen($json_val['jHoliday'])) continue;
+            if($json_val['jHoliday'] == '振替') $json_val['jHoliday'] .= '休日';
             $holiday_array[$json_val['jYear'].'-'.$json_val['jMonth'].'-'.$json_val['jDay']] = $json_val['jHoliday'];
         }
     }
