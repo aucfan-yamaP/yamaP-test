@@ -120,15 +120,16 @@ td.days .day_shift{
 table.select td.days{
 	cursor:pointer;
 }
-td.holi span.holiday{
+td.holi div.holiday{
 	font-size:8px;
 	overflow:hidden;
 	text-overflow:ellipsis;
 	white-space:nowrap;
 	webkit-text-overflow: ellipsis;
 	  -o-text-overflow: ellipsis;
-	width:90%;
+	position:absolute;
 	display:inline-block;
+	width:45px;
 }
 td.days .mark{
 	
