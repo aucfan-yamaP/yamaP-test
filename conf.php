@@ -49,6 +49,18 @@
                 'time_start' => '10:00',
                 'time_end' => '16:45',
             ),
+            'F Fs' => array(
+                'time_start' => '10:00',
+                'time_end' => '22:30',                
+            ),
+            'F FTr' => array(
+                'time_start' => '10:00',
+                'time_end' => '22:30',                
+            ),
+            'F Sp' => array(
+                'time_start' => '10:00',
+                'time_end' => '22:30',                
+            ),
             'Sc-Sp' => array(
                 'time_start' => '10:00',
                 'time_end' => '22:30',
