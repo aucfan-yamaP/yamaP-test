@@ -140,8 +140,8 @@ $(function(){
          wipeDown:function(){
              return true;             
          },
-         min_move_x: 110,
-         min_move_y: 110,
+         min_move_x: 120,
+         min_move_y: 120,
          preventDefaultEvents: true
     });
 
