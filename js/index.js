@@ -127,6 +127,24 @@ $(function(){
          preventDefaultEvents: true
     });
 
+    $('tr.week_tr').touchwipe({
+         wipeLeft:function(){
+             location.href = '?date='+$('.main_table').attr('data-prevcal');
+         },
+         wipeRight:function(){
+             location.href = '?date='+$('.main_table').attr('data-nextcal');
+         },
+         wipeUp:function(){
+             return true;
+         },
+         wipeDown:function(){
+             return true;             
+         },
+         min_move_x: 110,
+         min_move_y: 110,
+         preventDefaultEvents: true
+    });
+
     $('span.logout a').click(function(){
         location.href = '?logout=1';
         return false;

@@ -72,8 +72,8 @@
             <div class="attention">
                 ※登録が完了したら下部の「選択完了」ボタンを押下してください
             </div>
-            <table class="main_table">
-                <tr>
+            <table class="main_table" data-nextcal="<?php echo $after_y.'-'.$after_n; ?>" data-prevcal="<?php echo $before_y.'-'.$before_n; ?>">
+                <tr class="week_tr">
                     <?php foreach($conf['WEEKEND_ENG'] as $key => $val): ?>
                         <th class="weekend w<?php echo $key; ?>">
                             <span class="radius_light w_radi"><?php echo $val; ?></span>
