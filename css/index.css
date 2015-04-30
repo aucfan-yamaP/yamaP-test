@@ -167,7 +167,7 @@ table.select td.days{
 	cursor:pointer;
 }
 td.holi div.holiday{
-	font-size:8px;
+	font-size:7.5px;
 	overflow:hidden;
 	text-overflow:ellipsis;
 	white-space:nowrap;
