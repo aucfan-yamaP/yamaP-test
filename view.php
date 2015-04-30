@@ -1,5 +1,5 @@
 <?php require_once('view_func.php'); ?>
-<?php echo $_ENV['HTTP_USER_AGENT']; exit; ?>
+<?php echo $_SERVER['HTTP_USER_AGENT']; exit; ?>
 <html>
     <head>
         <meta name="viewport" content="width=device-width,height=device-height">

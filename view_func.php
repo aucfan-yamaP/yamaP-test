@@ -2,7 +2,7 @@
     function isAndroid()
     {
         $return = false;
-        if(stripos($_ENV['HTTP_USER_AGENT'],'iPhone') === false)
+        if(stripos($_SERVER['HTTP_USER_AGENT'],'iPhone') === false)
         {
             $return = true;
         }
