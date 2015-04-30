@@ -56,7 +56,7 @@ body.select{
 div.account_img{
 	display: inline-block;
 	width:65px;
-	position:relative;
+	position:absolute;
 	top:2.5px;
 	cursor:pointer;
 }
@@ -70,7 +70,7 @@ div.this_ym{
 	vertical-align: bottom;
 	display:inline-block;
 	position:relative;
-	left:24%;
+	left:50%;
 }
 div.this_ym .this_y{
 	font-size: 25px;
@@ -123,7 +123,7 @@ div.attention{
 }
 table{
 	width:95%;
-	height:90%;
+	height:80%;
 }
 table,tr{
 }
@@ -167,7 +167,7 @@ table.select td.days{
 	cursor:pointer;
 }
 td.holi div.holiday{
-	font-size:7.5px;
+	font-size:8px;
 	overflow:hidden;
 	text-overflow:ellipsis;
 	white-space:nowrap;

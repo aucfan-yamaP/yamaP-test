@@ -1,8 +1,12 @@
+<?php require_once('view_func.php'); ?>
 <html>
     <head>
         <meta name="viewport" content="width=device-width,height=device-height">
         <meta name="robots" content="none">
         <link type="text/css" rel="stylesheet" href="css/index.css?<?php echo date('YmdHis'); ?>" />
+        <?php if(isAndroid()): ?>
+            <link type="text/css" rel="stylesheet" href="css/android.css?<?php echo date('YmdHis'); ?>" />
+        <?php endif; ?>
         <link rel="apple-touch-icon" href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/maoshift_favi.png" />
         <link rel="shortcut icon" href="favicon.ico" /> 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
