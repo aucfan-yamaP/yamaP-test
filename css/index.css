@@ -1,38 +1,38 @@
 body.spring01{
-	background: url("/img/spring01.jpg");
+	background: url("/img/spring01.jpg") fixed;
 }
 body.spring02{
-	background: url("/img/spring02.jpg");
+	background: url("/img/spring02.jpg") fixed;
 }
 body.spring03{
-	background: url("/img/spring03.jpg");
+	background: url("/img/spring03.jpg") fixed;
 }
 body.summer01{
-	background: url("/img/summer01.jpg");
+	background: url("/img/summer01.jpg") fixed;
 }
 body.summer02{
-	background: url("/img/summer02.jpg");
+	background: url("/img/summer02.jpg") fixed;
 }
 body.summer03{
-	background: url("/img/summer03.jpg");
+	background: url("/img/summer03.jpg") fixed;
 }
 body.autumn01{
-	background: url("/img/autumn01.jpg");
+	background: url("/img/autumn01.jpg") fixed;
 }
 body.autumn02{
-	background: url("/img/autumn02.jpg");
+	background: url("/img/autumn02.jpg") fixed;
 }
 body.autumn03{
-	background: url("/img/autumn03.jpg");
+	background: url("/img/autumn03.jpg") fixed;
 }
 body.winter01{
-	background: url("/img/winter01.jpg");
+	background: url("/img/winter01.jpg") fixed;
 }
 body.winter02{
-	background: url("/img/winter02.jpg");
+	background: url("/img/winter02.jpg") fixed;
 }
 body.winter03{
-	background: url("/img/winter03.jpg");
+	background: url("/img/winter03.jpg") fixed;
 }
 body.season div.this_ym,
 body.season div.attention,
