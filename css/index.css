@@ -87,6 +87,7 @@ div.menu{
 	float:right;
 	position:fixed;
 	right:50px;
+	z-index:1;
 }
 div.menu_list{
 	background-color:#9E6A5A;
