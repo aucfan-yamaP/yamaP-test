@@ -1,5 +1,6 @@
 <?php
     $config = array(
+        'SITE_TITLE' => 'まおｼﾌﾄ',
         'WEEKEND' => array(
             0 => '日',
             1 => '月',

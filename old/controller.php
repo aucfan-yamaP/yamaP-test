@@ -105,7 +105,7 @@
     if(strtotime('2015-05-01') <= strtotime($real_today))
     {
         $season = 'season';
-        $season .= $conf['SEASON'][$today_n];
+        $season .= ' '.$conf['SEASON'][$today_n];
         $season_no = ($today_j%3 == 0)? '03':'';
         if(!strlen($season_no))
         {

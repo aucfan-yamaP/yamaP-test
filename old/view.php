@@ -1,8 +1,12 @@
+<?php require_once('view_func.php'); ?>
 <html>
     <head>
         <meta name="viewport" content="width=device-width,height=device-height">
         <meta name="robots" content="none">
         <link type="text/css" rel="stylesheet" href="css/index.css?<?php echo date('YmdHis'); ?>" />
+        <?php if(isAndroid()): ?>
+            <link type="text/css" rel="stylesheet" href="css/android.css?<?php echo date('YmdHis'); ?>" />
+        <?php endif; ?>
         <link rel="apple-touch-icon" href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/maoshift_favi.png" />
         <link rel="shortcut icon" href="favicon.ico" /> 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -63,7 +67,7 @@
                 <?php endif; ?>
                 <br /><br />
                 <span class="funny_img">
-                    <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?><?php if($view_only): ?>/top.php<?php endif; ?>"><?php if(!$view_only): ?><img src="img/<?php echo (rand(0,1) == 0)? 'ryota':'mao'; ?>0.png" /><?php endif; ?>&nbsp;&nbsp;今月に戻る</a>
+                    <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?><?php if($view_only): ?>/top<?php endif; ?>"><?php if(!$view_only): ?><img src="img/<?php echo (rand(0,1) == 0)? 'ryota':'mao'; ?>0.png" /><?php endif; ?>&nbsp;&nbsp;今月に戻る</a>
                 </span>
                 <span class="logout">
                     <!-- <a href="#">ログアウト</a> -->

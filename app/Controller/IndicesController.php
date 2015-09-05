@@ -125,13 +125,13 @@ class IndicesController extends AppController {
 		$season_no = '';
 		if(strtotime('2015-05-01') <= strtotime($real_today))
 		{
-		    $season = 'season';
-		    $season .= $this->config['SEASON'][$today_n];
-		    $season_no = ($today_j%3 == 0)? '03':'';
-		    if(!strlen($season_no))
-		    {
-		        $season_no = ($today_j%2 == 0)? '02':'01';
-		    }
+			$season = 'season';
+			$season .= ' '.$this->config['SEASON'][$today_n];
+			$season_no = ($today_j%3 == 0)? '03':'';
+			if(!strlen($season_no))
+			{
+				$season_no = ($today_j%2 == 0)? '02':'01';
+			}
 		}
 
 		$db_data = $this->getDbData($calendar_main,$calendaer_last_date);

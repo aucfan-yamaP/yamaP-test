@@ -30,4 +30,13 @@ App::uses('Helper', 'View');
  * @package       app.View.Helper
  */
 class AppHelper extends Helper {
+	public function isAndroid()
+	{
+		$return = false;
+		if(stripos($_SERVER['HTTP_USER_AGENT'],'iPhone') === false)
+		{
+			$return = true;
+		}
+		return $return;
+	}
 }

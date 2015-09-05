@@ -575,3 +575,121 @@ Request URL: /
 Stack Trace:
 #0 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-09-05 21:43:00 Error: Fatal Error (1): Call to undefined method HelperCollection::isAndroid() in [/var/www/html/yamaP-test/app/View/Layouts/default.ctp, line 27]
+2015-09-05 21:43:00 Error: [FatalErrorException] Call to undefined method HelperCollection::isAndroid()
+Request URL: /
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/y...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/y...', 27, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/y...', 27, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 21:43:11 Error: Fatal Error (1): Call to undefined method HelperCollection::isAndroid() in [/var/www/html/yamaP-test/app/View/Layouts/default.ctp, line 27]
+2015-09-05 21:43:11 Error: [FatalErrorException] Call to undefined method HelperCollection::isAndroid()
+Request URL: /
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/y...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/y...', 27, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/y...', 27, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 21:43:12 Error: Fatal Error (1): Call to undefined method HelperCollection::isAndroid() in [/var/www/html/yamaP-test/app/View/Layouts/default.ctp, line 27]
+2015-09-05 21:43:12 Error: [FatalErrorException] Call to undefined method HelperCollection::isAndroid()
+Request URL: /
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/y...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/y...', 27, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/y...', 27, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 21:49:17 Error: [MissingActionException] Action IndicesController::ajax.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'IndicesController',
+  'action' => 'ajax.php',
+)
+Request URL: /ajax.php
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#2 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-09-05 22:19:13 Error: [MissingActionException] Action IndicesController::sasa() could not be found.
+Exception Attributes: array (
+  'controller' => 'IndicesController',
+  'action' => 'sasa',
+)
+Request URL: /sasa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#2 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-09-05 22:21:27 Error: [MissingActionException] Action IndicesController::sasa() could not be found.
+Exception Attributes: array (
+  'controller' => 'IndicesController',
+  'action' => 'sasa',
+)
+Request URL: /sasa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#2 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-09-05 22:26:18 Error: [MissingActionException] Action IndicesController::sasa() could not be found.
+Exception Attributes: array (
+  'controller' => 'IndicesController',
+  'action' => 'sasa',
+)
+Request URL: /sasa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#2 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-09-05 22:26:19 Error: [MissingActionException] Action IndicesController::sasa() could not be found.
+Exception Attributes: array (
+  'controller' => 'IndicesController',
+  'action' => 'sasa',
+)
+Request URL: /sasa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#2 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-09-05 22:26:19 Error: [MissingActionException] Action IndicesController::sasa() could not be found.
+Exception Attributes: array (
+  'controller' => 'IndicesController',
+  'action' => 'sasa',
+)
+Request URL: /sasa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#2 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-09-05 22:28:32 Error: [MissingActionException] Action IndicesController::sasa() could not be found.
+Exception Attributes: array (
+  'controller' => 'IndicesController',
+  'action' => 'sasa',
+)
+Request URL: /sasa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#2 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-09-05 22:28:38 Error: [MissingActionException] Action IndicesController::sasa() could not be found.
+Exception Attributes: array (
+  'controller' => 'IndicesController',
+  'action' => 'sasa',
+)
+Request URL: /sasa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#2 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

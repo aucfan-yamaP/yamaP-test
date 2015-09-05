@@ -17,21 +17,23 @@
 $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
 $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 ?>
-<!DOCTYPE html>
 <html>
 <head>
 	<?php echo $this->Html->charset(); ?>
-        <meta name="viewport" content="width=device-width,height=device-height">
-        <meta name="robots" content="none">
-        <?php echo $this->Html->css('index.css'); ?>
-        <link rel="apple-touch-icon" href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/maoshift_favi.png" />
-        <link rel="shortcut icon" href="favicon.ico" />
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <?php echo $this->Html->script('jquery.cookie.js'); ?>
-        <?php echo $this->Html->script('swipe.js'); ?>
-        <?php echo $this->Html->script('index.js'); ?>
+	<meta name="viewport" content="width=device-width,height=device-height">
+	<meta name="robots" content="none">
+	<?php echo $this->Html->css('index.css?'.date('YmdHis')); ?>
+	<?php if($this->Html->isAndroid()): ?>
+		<?php echo $this->Html->css('android.css?'.date('YmdHis')); ?>
+	<?php endif; ?>
+	<link rel="apple-touch-icon" href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/maoshift_favi.png" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<?php echo $this->Html->script('jquery.cookie.js'); ?>
+	<?php echo $this->Html->script('swipe.js'); ?>
+	<?php echo $this->Html->script('index.js'); ?>
 	<title>
-		<?php echo $this->fetch('title'); ?>
+		<?php echo Configure::read('SITE_TITLE'); ?>
 	</title>
 	<?php
 		echo $this->fetch('meta');
@@ -39,7 +41,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->fetch('script');
 	?>
 </head>
-<body class="<?php echo $season.$season_no; ?>">
+<body class="<?php echo (isset($season) || isset($season_no))? $season.$season_no:''; ?>">
 	<?php echo $this->fetch('content'); ?>
 </body>
 </html>
