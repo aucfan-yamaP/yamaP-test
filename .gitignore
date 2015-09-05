@@ -1,3 +1,4 @@
 auth.php
 .DS_Store
-app/tmp/*
+app/tmp/
+*.log
