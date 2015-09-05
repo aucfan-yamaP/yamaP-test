@@ -166,7 +166,7 @@ $(function(){
         obj.find('img.batsu').css('display','none');
         var del = (delFlg == 'del')? 'del':'';
         $.ajax({
-            url:'ajax',
+            url:'/ajax',
             type:'POST',
             data:{'shift':shift,'date':obj.attr('data-dateFull'),'del':del},
             success:function(ret){
