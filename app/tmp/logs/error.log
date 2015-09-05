@@ -1,0 +1,695 @@
+2015-09-02 15:56:23 Error: [MissingViewException] View file "Pages/a.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages/a.ctp',
+)
+Request URL: /pages/a
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/View/View.php(470): View->_getViewFileName('a')
+#1 /var/www/html/yamaP-test/lib/Cake/Controller/Controller.php(960): View->render('a', NULL)
+#2 /var/www/html/yamaP-test/app/Controller/PagesController.php(68): Controller->render('a')
+#3 [internal function]: PagesController->display('a')
+#4 /var/www/html/yamaP-test/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-09-02 17:06:09 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/yamaP-test/app/Controller/PagesController.php, line 65]
+2015-09-02 17:06:09 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /pages/a
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/y...', 65)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/y...', 65, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/y...', 65, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 17:06:23 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/yamaP-test/app/Controller/PagesController.php, line 65]
+2015-09-02 17:06:23 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /pages/a
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/y...', 65)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/y...', 65, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/y...', 65, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 17:06:24 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/yamaP-test/app/Controller/PagesController.php, line 65]
+2015-09-02 17:06:24 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /pages/a
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/y...', 65)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/y...', 65, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/y...', 65, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 17:28:14 Error: [MissingActionException] Action IndicesController::a() could not be found.
+Exception Attributes: array (
+  'controller' => 'IndicesController',
+  'action' => 'a',
+)
+Request URL: /Indices/a
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#2 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-09-02 17:30:56 Error: [MissingActionException] Action IndicesController::a() could not be found.
+Exception Attributes: array (
+  'controller' => 'IndicesController',
+  'action' => 'a',
+)
+Request URL: /Indices/a
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#2 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-09-02 17:34:29 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 5]
+2015-09-02 17:34:29 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /Indices/
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/y...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/y...', 5, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/y...', 5, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-02 17:38:53 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 5]
+2015-09-02 17:38:53 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /Indices/
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/y...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/y...', 5, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/y...', 5, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 11:18:16 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /index/?i=unko
+Stack Trace:
+#0 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-05 11:18:27 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /index/top
+Stack Trace:
+#0 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-05 11:18:42 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /index/top
+Stack Trace:
+#0 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-05 11:39:51 Error: [MissingViewException] View file "Indices/top.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Indices/top.ctp',
+)
+Request URL: /indices/top?i=aa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/yamaP-test/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#4 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-09-05 13:22:11 Error: [ConfigureException] Could not load configuration file: /var/www/html/yamaP-test/app/Config/WEEKEND.php
+Request URL: /indices?i=aa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Core/Configure.php(323): PhpReader->read('WEEKEND')
+#1 /var/www/html/yamaP-test/app/Controller/IndicesController.php(5): Configure::load('WEEKEND')
+#2 [internal function]: IndicesController->index()
+#3 /var/www/html/yamaP-test/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(IndicesController), Array)
+#4 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#6 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-09-05 13:22:13 Error: [ConfigureException] Could not load configuration file: /var/www/html/yamaP-test/app/Config/WEEKEND.php
+Request URL: /indices?i=aa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Core/Configure.php(323): PhpReader->read('WEEKEND')
+#1 /var/www/html/yamaP-test/app/Controller/IndicesController.php(5): Configure::load('WEEKEND')
+#2 [internal function]: IndicesController->index()
+#3 /var/www/html/yamaP-test/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(IndicesController), Array)
+#4 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#6 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-09-05 13:22:14 Error: [ConfigureException] Could not load configuration file: /var/www/html/yamaP-test/app/Config/WEEKEND.php
+Request URL: /indices?i=aa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Core/Configure.php(323): PhpReader->read('WEEKEND')
+#1 /var/www/html/yamaP-test/app/Controller/IndicesController.php(5): Configure::load('WEEKEND')
+#2 [internal function]: IndicesController->index()
+#3 /var/www/html/yamaP-test/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(IndicesController), Array)
+#4 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#6 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-09-05 17:52:06 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 24]
+2015-09-05 17:52:06 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices?i=aa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 24)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 17:52:52 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 24]
+2015-09-05 17:52:52 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 24)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 17:53:12 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 24]
+2015-09-05 17:53:12 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 24)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 17:53:14 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 24]
+2015-09-05 17:53:14 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 24)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 17:53:14 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 24]
+2015-09-05 17:53:14 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 24)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 17:53:49 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 24]
+2015-09-05 17:53:49 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 24)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 17:53:50 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 24]
+2015-09-05 17:53:50 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 24)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 17:53:50 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 24]
+2015-09-05 17:53:50 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 24)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 17:54:17 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 24]
+2015-09-05 17:54:17 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 24)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 18:00:35 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 23]
+2015-09-05 18:00:35 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 23)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 23, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 23, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 18:04:28 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 24]
+2015-09-05 18:04:28 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 24)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 18:04:28 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 24]
+2015-09-05 18:04:28 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 24)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 18:04:29 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 24]
+2015-09-05 18:04:29 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 24)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 24, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 18:06:04 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 26]
+2015-09-05 18:06:04 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 26, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 26, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 18:06:05 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 26]
+2015-09-05 18:06:05 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 26, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 26, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 18:06:05 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 26]
+2015-09-05 18:06:05 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 26, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 26, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 18:07:54 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 25]
+2015-09-05 18:07:54 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 25)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 25, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 25, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 18:07:55 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 25]
+2015-09-05 18:07:55 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 25)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 25, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 25, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 18:10:03 Error: Fatal Error (4): syntax error, unexpected ')', expecting T_PAAMAYIM_NEKUDOTAYIM in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 25]
+2015-09-05 18:10:03 Error: [FatalErrorException] syntax error, unexpected ')', expecting T_PAAMAYIM_NEKUDOTAYIM
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/y...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/y...', 25, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/y...', 25, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 18:10:18 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 25]
+2015-09-05 18:10:18 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/y...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/y...', 25, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/y...', 25, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 18:10:18 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 25]
+2015-09-05 18:10:18 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/y...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/y...', 25, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/y...', 25, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 18:10:19 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 25]
+2015-09-05 18:10:19 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/y...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/y...', 25, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/y...', 25, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 18:10:46 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 25]
+2015-09-05 18:10:46 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 25)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 25, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 25, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 18:14:10 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 25]
+2015-09-05 18:14:10 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 25)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 25, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 25, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 18:14:10 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 25]
+2015-09-05 18:14:10 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 25)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 25, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 25, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 18:14:10 Error: Fatal Error (64): Can't use method return value in write context in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 25]
+2015-09-05 18:14:10 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /indices
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/var/www/html/y...', 25)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/var/www/html/y...', 25, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/var/www/html/y...', 25, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 19:14:04 Error: Fatal Error (4): syntax error, unexpected T_EXIT in [/var/www/html/yamaP-test/app/View/Layouts/default.ctp, line 19]
+2015-09-05 19:14:04 Error: [FatalErrorException] syntax error, unexpected T_EXIT
+Request URL: /indices?i=aa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/y...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/y...', 19, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/y...', 19, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 19:14:05 Error: Fatal Error (4): syntax error, unexpected T_EXIT in [/var/www/html/yamaP-test/app/View/Layouts/default.ctp, line 19]
+2015-09-05 19:14:05 Error: [FatalErrorException] syntax error, unexpected T_EXIT
+Request URL: /indices?i=aa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/y...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/y...', 19, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/y...', 19, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 19:14:06 Error: Fatal Error (4): syntax error, unexpected T_EXIT in [/var/www/html/yamaP-test/app/View/Layouts/default.ctp, line 19]
+2015-09-05 19:14:06 Error: [FatalErrorException] syntax error, unexpected T_EXIT
+Request URL: /indices?i=aa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/y...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/y...', 19, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/y...', 19, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 19:28:41 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/yamaP-test/app/View/Layouts/default.ctp, line 26]
+2015-09-05 19:28:41 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /indices?i=aa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/y...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/y...', 26, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/y...', 26, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 19:51:39 Error: [MissingHelperException] Helper class configHelper could not be found.
+Exception Attributes: array (
+  'class' => 'configHelper',
+  'plugin' => false,
+)
+Request URL: /indices?i=aa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('config')
+#1 /var/www/html/yamaP-test/lib/Cake/View/View.php(858): HelperCollection->__isset('config')
+#2 /var/www/html/yamaP-test/app/View/Indices/top.ctp(63): View->__get('config')
+#3 /var/www/html/yamaP-test/lib/Cake/View/View.php(971): include('/var/www/html/y...')
+#4 /var/www/html/yamaP-test/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/y...', Array)
+#5 /var/www/html/yamaP-test/lib/Cake/View/View.php(473): View->_render('/var/www/html/y...')
+#6 /var/www/html/yamaP-test/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#7 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#9 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-09-05 19:57:11 Error: [MissingHelperException] Helper class configHelper could not be found.
+Exception Attributes: array (
+  'class' => 'configHelper',
+  'plugin' => false,
+)
+Request URL: /indices?i=aa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('config')
+#1 /var/www/html/yamaP-test/lib/Cake/View/View.php(858): HelperCollection->__isset('config')
+#2 /var/www/html/yamaP-test/app/View/Indices/top.ctp(63): View->__get('config')
+#3 /var/www/html/yamaP-test/lib/Cake/View/View.php(971): include('/var/www/html/y...')
+#4 /var/www/html/yamaP-test/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/y...', Array)
+#5 /var/www/html/yamaP-test/lib/Cake/View/View.php(473): View->_render('/var/www/html/y...')
+#6 /var/www/html/yamaP-test/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#7 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#9 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-09-05 19:57:12 Error: [MissingHelperException] Helper class configHelper could not be found.
+Exception Attributes: array (
+  'class' => 'configHelper',
+  'plugin' => false,
+)
+Request URL: /indices?i=aa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('config')
+#1 /var/www/html/yamaP-test/lib/Cake/View/View.php(858): HelperCollection->__isset('config')
+#2 /var/www/html/yamaP-test/app/View/Indices/top.ctp(63): View->__get('config')
+#3 /var/www/html/yamaP-test/lib/Cake/View/View.php(971): include('/var/www/html/y...')
+#4 /var/www/html/yamaP-test/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/y...', Array)
+#5 /var/www/html/yamaP-test/lib/Cake/View/View.php(473): View->_render('/var/www/html/y...')
+#6 /var/www/html/yamaP-test/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#7 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#9 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-09-05 19:57:35 Error: [MissingHelperException] Helper class configHelper could not be found.
+Exception Attributes: array (
+  'class' => 'configHelper',
+  'plugin' => false,
+)
+Request URL: /indices?i=aa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('config')
+#1 /var/www/html/yamaP-test/lib/Cake/View/View.php(858): HelperCollection->__isset('config')
+#2 /var/www/html/yamaP-test/app/View/Indices/top.ctp(63): View->__get('config')
+#3 /var/www/html/yamaP-test/lib/Cake/View/View.php(971): include('/var/www/html/y...')
+#4 /var/www/html/yamaP-test/lib/Cake/View/View.php(933): View->_evaluate('/var/www/html/y...', Array)
+#5 /var/www/html/yamaP-test/lib/Cake/View/View.php(473): View->_render('/var/www/html/y...')
+#6 /var/www/html/yamaP-test/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#7 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#9 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-09-05 20:47:26 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/html/yamaP-test/app/Controller/IndicesController.php, line 253]
+2015-09-05 20:47:26 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /indices?i=aa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/y...', 253)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/y...', 253, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/y...', 253, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 21:03:46 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /?i=aa
+Stack Trace:
+#0 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-05 21:03:58 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /?i=aa
+Stack Trace:
+#0 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-05 21:04:08 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /?i=aa
+Stack Trace:
+#0 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-05 21:04:53 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-05 21:43:00 Error: Fatal Error (1): Call to undefined method HelperCollection::isAndroid() in [/var/www/html/yamaP-test/app/View/Layouts/default.ctp, line 27]
+2015-09-05 21:43:00 Error: [FatalErrorException] Call to undefined method HelperCollection::isAndroid()
+Request URL: /
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/y...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/y...', 27, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/y...', 27, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 21:43:11 Error: Fatal Error (1): Call to undefined method HelperCollection::isAndroid() in [/var/www/html/yamaP-test/app/View/Layouts/default.ctp, line 27]
+2015-09-05 21:43:11 Error: [FatalErrorException] Call to undefined method HelperCollection::isAndroid()
+Request URL: /
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/y...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/y...', 27, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/y...', 27, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 21:43:12 Error: Fatal Error (1): Call to undefined method HelperCollection::isAndroid() in [/var/www/html/yamaP-test/app/View/Layouts/default.ctp, line 27]
+2015-09-05 21:43:12 Error: [FatalErrorException] Call to undefined method HelperCollection::isAndroid()
+Request URL: /
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/y...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/y...', 27, Array)
+#2 /var/www/html/yamaP-test/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/y...', 27, Array)
+#3 /var/www/html/yamaP-test/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 21:49:17 Error: [MissingActionException] Action IndicesController::ajax.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'IndicesController',
+  'action' => 'ajax.php',
+)
+Request URL: /ajax.php
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#2 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-09-05 22:19:13 Error: [MissingActionException] Action IndicesController::sasa() could not be found.
+Exception Attributes: array (
+  'controller' => 'IndicesController',
+  'action' => 'sasa',
+)
+Request URL: /sasa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#2 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-09-05 22:21:27 Error: [MissingActionException] Action IndicesController::sasa() could not be found.
+Exception Attributes: array (
+  'controller' => 'IndicesController',
+  'action' => 'sasa',
+)
+Request URL: /sasa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#2 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-09-05 22:26:18 Error: [MissingActionException] Action IndicesController::sasa() could not be found.
+Exception Attributes: array (
+  'controller' => 'IndicesController',
+  'action' => 'sasa',
+)
+Request URL: /sasa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#2 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-09-05 22:26:19 Error: [MissingActionException] Action IndicesController::sasa() could not be found.
+Exception Attributes: array (
+  'controller' => 'IndicesController',
+  'action' => 'sasa',
+)
+Request URL: /sasa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#2 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-09-05 22:26:19 Error: [MissingActionException] Action IndicesController::sasa() could not be found.
+Exception Attributes: array (
+  'controller' => 'IndicesController',
+  'action' => 'sasa',
+)
+Request URL: /sasa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#2 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-09-05 22:28:32 Error: [MissingActionException] Action IndicesController::sasa() could not be found.
+Exception Attributes: array (
+  'controller' => 'IndicesController',
+  'action' => 'sasa',
+)
+Request URL: /sasa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#2 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-09-05 22:28:38 Error: [MissingActionException] Action IndicesController::sasa() could not be found.
+Exception Attributes: array (
+  'controller' => 'IndicesController',
+  'action' => 'sasa',
+)
+Request URL: /sasa
+Stack Trace:
+#0 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/yamaP-test/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IndicesController), Object(CakeRequest))
+#2 /var/www/html/yamaP-test/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
