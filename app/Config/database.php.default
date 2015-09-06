@@ -79,6 +79,14 @@ class DATABASE_CONFIG {
 		//'encoding' => 'utf8',
 	);
 
+	public $default_mongo = array(
+		'datasource' => 'Mongodb.MongodbSource',
+		'host' => 'localhost',
+		'database' => 'calendar',
+		'port' => '27017',
+		'encoding' => 'utf8',
+	);
+
 	public $test = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
