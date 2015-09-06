@@ -22,11 +22,13 @@ class IndicesController extends AppController {
 
 	public function top()
 	{
-		if(!$this->view_only)
+		if(!$this->view_only) $this->auth();
+		if($this->isTodayMonth())
 		{
-			$this->auth();
+			$action = '/';
+			if($this->view_only) $action = 'top';
+			return $this->redirect(array('action' => $action));
 		}
-
 		$this->makeDateData();
 		$this->makeDaysDaysOfBeforeAndAfter();
 		$this->makeHolidayArray();
@@ -152,6 +154,17 @@ class IndicesController extends AppController {
 		}
 		$this->cookie_auth_user = (isset($_COOKIE['r_m_33_u']))? $_COOKIE['r_m_33_u']:'mao';
 		return;
+	}
+
+	private function isTodayMonth()
+	{
+		$return = false;
+		if(!$this->request->query('date')) return $return;
+		$this_day = (strtotime($this->request->query('date')) > strtotime('2010-01-01'))? $this->request->query('date'):date('Y-m-d');
+		$this_day_strtotime = strtotime($this_day);
+		if(date('Ym') == date('Ym',$this_day_strtotime)) $return = true;
+
+		return $return;
 	}
 
 	private function makeDateData()
