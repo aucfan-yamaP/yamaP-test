@@ -38,17 +38,24 @@ class IndicesController extends AppController {
 		$today_n = date('n',$this_day_strtotime);
 		$today_j = date('j',$this_day_strtotime);
 
-		$before_y = date('Y',strtotime($this_day.' -1 month'));
-		$before_m = date('m',strtotime($this_day.' -1 month'));
-		$before_d = date('d',strtotime($this_day.' -1 month'));
-		$before_n = date('n',strtotime($this_day.' -1 month'));
-		$before_j = date('j',strtotime($this_day.' -1 month'));
+		$before_y = date('Y',strtotime($today_y.'-'.$today_m.'-01 -1 month'));
+		$before_m = date('m',strtotime($today_y.'-'.$today_m.'-01 -1 month'));
+		$before_d = date('d',strtotime($today_y.'-'.$today_m.'-01 -1 month'));
+		$before_n = date('n',strtotime($today_y.'-'.$today_m.'-01 -1 month'));
+		$before_j = date('j',strtotime($today_y.'-'.$today_m.'-01 -1 month'));
 
-		$after_y = date('Y',strtotime($this_day.' +1 month'));
-		$after_m = date('m',strtotime($this_day.' +1 month'));
-		$after_d = date('d',strtotime($this_day.' +1 month'));
-		$after_n = date('n',strtotime($this_day.' +1 month'));
-		$after_j = date('j',strtotime($this_day.' +1 month'));
+		$after_y = date('Y',strtotime($today_y.'-'.$today_m.'-01 +1 month'));
+		$after_m = date('m',strtotime($today_y.'-'.$today_m.'-01 +1 month'));
+		$after_d = date('d',strtotime($today_y.'-'.$today_m.'-01 +1 month'));
+		$after_n = date('n',strtotime($today_y.'-'.$today_m.'-01 +1 month'));
+		$after_j = date('j',strtotime($today_y.'-'.$today_m.'-01 +1 month'));
+
+		$before_l = date('d',strtotime($today_y.'-'.$today_m.'-01 -1 day'));
+		$today_l = date('d',strtotime($after_y.'-'.$after_m.'-01 -1 day'));
+		$before_lj = date('j',strtotime($today_y.'-'.$today_m.'-01 -1 day'));
+		$today_lj = date('j',strtotime($after_y.'-'.$after_m.'-01 -1 day'));
+		$before_lw = date('w',strtotime($today_y.'-'.$today_m.'-01 -1 day'));
+		$today_lw = date('w',strtotime($after_y.'-'.$after_m.'-01 -1 day'));
 
 		$before_l = date('d',strtotime($today_y.'-'.$today_m.'-01 -1 day'));
 		$today_l = date('d',strtotime($after_y.'-'.$after_m.'-01 -1 day'));
